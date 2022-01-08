@@ -1,8 +1,8 @@
 ﻿using VoiceAIDatasetManager;
 
-Console.WriteLine("========================");
-Console.WriteLine("VoiceAI Dataset Manager");
-Console.WriteLine("========================");
+Console.WriteLine("=========================");
+Console.WriteLine(" VoiceAI Dataset Manager ");
+Console.WriteLine("=========================");
 
 if (args.Length < 2)
 {
@@ -12,7 +12,7 @@ if (args.Length < 2)
 
 var dataset = new Dataset();
 
-Console.WriteLine(":: Loading dataset");
+Console.WriteLine(":: Loading dataset...");
 dataset.Load(args[0]);
 
 Console.WriteLine(":: Saving Master List...");
