@@ -15,7 +15,10 @@ public class TranscriptionFile : IEnumerable<KeyValuePair<string, string>>
     
     public void AddEntry(string file, string transcription)
     {
-        _entries.Add(file, transcription);
+        if (_entries.ContainsKey(file))
+            _entries[file] = transcription;
+        else
+            _entries.Add(file, transcription);
     }
     
     public void RemoveEntry(string file)
